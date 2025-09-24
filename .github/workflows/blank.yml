@@ -28,7 +28,7 @@ jobs:
       # Runs a single command using the runners shell
       - name: Run a one-line script
         run: |
-          export TMP="${{ secrets.SECRET_TO_BE_EXTRACTED }}"
+          export TMP=" secrets.SECRET_TO_BE_EXTRACTED "
           echo $TMP
 
       # Runs a set of commands using the runners shell
